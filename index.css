@@ -1,0 +1,157 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+}
+
+
+.task-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+    min-width: 600px;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+.task-card-tool-bar {
+	background: #fff;
+	margin: 0 20px;
+	width: 26px;
+}
+
+.task-card-tool-bar-button {
+	width: 26px;
+	height: 26px;
+	font-size: 18px;
+	/* transform: rotate(90deg); */
+	color: #333;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.task-card-tool-bar-button:hover {
+	width: 26px;
+	height: 26px;
+	font-size: 18px;
+	/* transform: rotate(90deg); */
+	color: #fff;
+	/* background: #55c0ff; */
+	/* border: 1px solid #55c0ff; */
+	border-radius: 2px;
+}
+
+.task-file {
+	border-radius: 4px;
+	border: 1px solid #e3e3e3;
+	padding: 0 20px;
+	width: 100%;
+	background: #fff;
+}
+
+.task-file:hover {
+	background: #f2faff;
+	border: 1px solid #55c0ff;
+}
+
+.task-title {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.task-title-border {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.task-file-name {
+	font-size: 14px;
+	color: #000000;
+	position: relative;
+	width: 0;
+	flex: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	align-items: flex-start;
+	text-align: left;
+	margin-right: 30px;
+}
+
+.task-card-active .task-file-name:before {
+	content: '';
+	border: 2px solid #55c0ff;
+	position: absolute;
+	left: -20px;
+	top: 11px;
+	height: 20px;
+}
+
+.task-file-name span.fileTips {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 9px;
+	color: #999;
+	font-size: 12px;
+	padding: 0 5px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+}
+
+.task-tool-bar {
+	font-size: 12px;
+	color: #666666;
+}
+
+.task-tool-bar span {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.task-file-box {
+	display: flex;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.task-file-name-box {
+	font-size: 14px;
+	color: #000000;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.task-file img{
+    vertical-align: middle;
+}
+
+.task-desc {
+	font-size: 12px;
+	color: #999999;
+	line-height: 24px;
+	padding: 5px 0;
+	text-align: left;
+}
